@@ -7,7 +7,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./letsejcrypt:/letsencrypt
+      - ./letsencrypt:/letsencrypt
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./traefik_dynamic.yml:/etc/traefik/traefik_dynamic.yml
     networks:
@@ -30,5 +30,4 @@ services:
 
 networks:
   traefik-network:
-    driver: bridge
     external: true
