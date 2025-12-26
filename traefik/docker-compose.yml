@@ -16,7 +16,7 @@ services:
       - "--api.insecure=true"
       - "--api.dashboard=true"
       - "--providers.docker=true"
-      - "--providers.file.filename=/etc/traefiktraefik_dynamic.yml"
+      - "--providers.file.filename=/etc/traefik/traefik_dynamic.yml"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
       - "--certificatesresolvers.myresolver.acme.tlschallenge=true"
